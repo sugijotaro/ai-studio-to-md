@@ -1,0 +1,147 @@
+{
+  "runSettings": {
+    "temperature": 1.0,
+    "model": "models/gemini-3-pro-preview",
+    "topP": 0.95,
+    "topK": 64,
+    "maxOutputTokens": 65536,
+    "safetySettings": [{
+      "category": "HARM_CATEGORY_HARASSMENT",
+      "threshold": "OFF"
+    }, {
+      "category": "HARM_CATEGORY_HATE_SPEECH",
+      "threshold": "OFF"
+    }, {
+      "category": "HARM_CATEGORY_SEXUALLY_EXPLICIT",
+      "threshold": "OFF"
+    }, {
+      "category": "HARM_CATEGORY_DANGEROUS_CONTENT",
+      "threshold": "OFF"
+    }],
+    "enableCodeExecution": false,
+    "enableSearchAsATool": false,
+    "enableBrowseAsATool": false,
+    "enableAutoFunctionResponse": false,
+    "thinkingBudget": -1,
+    "outputResolution": "1K",
+    "thinkingLevel": "THINKING_HIGH"
+  },
+  "systemInstruction": {
+  },
+  "chunkedPrompt": {
+    "chunks": [{
+      "text": "Give me a brief history of Google.",
+      "role": "user",
+      "tokenCount": 9
+    }, {
+      "text": "**Beginning to Analyze History**\n\nI\u0027m starting by breaking down the request for Google\u0027s history. It\u0027s about a concise history up to January 2025. This seems straightforward, so I\u0027ll next move on to the actual research.\n\n\n**Defining the Timeline**\n\nI\u0027ve decided on a chronological approach, structuring the history into distinct eras. Right now, I\u0027m working to break up the different periods. I am on the section related to the Early Growth \u0026 IPO (1999-2004), specifically covering AdWords and the shift to Mountain View. I\u0027m focusing on the significant milestones within these periods.\n\n\n**Mapping Key Acquisitions \u0026 Pivots**\n\nI\u0027m now focusing on the acquisitions and product launches from 2005-2014, like Android and YouTube, and their impact. Then I\u0027m moving on to the Alphabet restructuring and Sundar Pichai\u0027s rise. Finally, I\u0027m considering Google\u0027s AI response to ChatGPT. It\u0027s becoming clearer how these events shaped Google.\n\n\n**Reviewing Recent Developments**\n\nI\u0027m now zeroing in on the critical period up to January 2025. I am assessing the integration of AI into Search (specifically, AI Overviews) as the central focus now. This includes direct competition with Microsoft/OpenAI, and how the regulatory threats of a break-up factor in. I\u0027m also ensuring the history remains informative, objective, and concise. I\u0027m also reviewing my draft to filter for the key achievements and challenges of this period, while avoiding extraneous details.\n\n\n**Summarizing key acquisitions**\n\nI\u0027m now identifying and briefly describing three pivotal acquisitions: Android, YouTube, and DoubleClick. After this, I need to concisely explain the formation of Alphabet, and the restructuring motivations. Finally, I will describe the current state, including the recent AI wars, and the antitrust lawsuits.\n\n\n",
+      "role": "model",
+      "isThought": true,
+      "parts": [{
+        "text": "**Beginning to Analyze History**\n\nI\u0027m starting by breaking down the request for Google\u0027s history. It\u0027s about a concise history up to January 2025. This seems straightforward, so I\u0027ll next move on to the actual research.\n\n\n",
+        "thought": true
+      }, {
+        "text": "**Defining the Timeline**\n\nI\u0027ve decided on a chronological approach, structuring the history into distinct eras. Right now, I\u0027m working to break up the different periods. I am on the section related to the Early Growth \u0026 IPO (1999-2004), specifically covering AdWords and the shift to Mountain View. I\u0027m focusing on the significant milestones within these periods.\n\n\n",
+        "thought": true
+      }, {
+        "text": "**Mapping Key Acquisitions \u0026 Pivots**\n\nI\u0027m now focusing on the acquisitions and product launches from 2005-2014, like Android and YouTube, and their impact. Then I\u0027m moving on to the Alphabet restructuring and Sundar Pichai\u0027s rise. Finally, I\u0027m considering Google\u0027s AI response to ChatGPT. It\u0027s becoming clearer how these events shaped Google.\n\n\n",
+        "thought": true
+      }, {
+        "text": "**Reviewing Recent Developments**\n\nI\u0027m now zeroing in on the critical period up to January 2025. I am assessing the integration of AI into Search (specifically, AI Overviews) as the central focus now. This includes direct competition with Microsoft/OpenAI, and how the regulatory threats of a break-up factor in. I\u0027m also ensuring the history remains informative, objective, and concise. I\u0027m also reviewing my draft to filter for the key achievements and challenges of this period, while avoiding extraneous details.\n\n\n",
+        "thought": true
+      }, {
+        "text": "**Summarizing key acquisitions**\n\nI\u0027m now identifying and briefly describing three pivotal acquisitions: Android, YouTube, and DoubleClick. After this, I need to concisely explain the formation of Alphabet, and the restructuring motivations. Finally, I will describe the current state, including the recent AI wars, and the antitrust lawsuits.\n\n\n",
+        "thought": true
+      }]
+    }, {
+      "text": "Here is a brief history of Google, broken down by key eras:\n\n### 1. Origins (1996–1998)\n*   **The Idea:** In 1996, Stanford Ph.D. students **Larry Page** and **Sergey Brin** began developing a search engine originally called **BackRub**. Unlike other engines that ranked results by how many times a keyword appeared, their algorithm (PageRank) analyzed relationships between websites to determine relevance.\n*   **The Name:** They renamed it Google, a play on the mathematical term \"googol\" (the number 1 followed by 100 zeros), symbolizing their mission to organize the immense amount of information on the web.\n*   **Incorporation:** After receiving a $100,000 check from Sun Microsystems co-founder Andy Bechtolsheim, Google was officially incorporated in September 1998. The first office was a garage in Menlo Park, California, rented from **Susan Wojcicki** (who would later become CEO of YouTube).\n\n### 2. Rapid Growth and IPO (1999–2004)\n*   **Expansion:** Google quickly outgrew the garage and moved to Palo Alto, and eventually to Mountain View (the \"Googleplex\").\n*   **Monetization:** In 2000, Google launched **AdWords**, a self-service program for creating online ad campaigns. This became the engine of Google\u0027s immense revenue.\n*   **Going Public:** On August 19, 2004, Google held its initial public offering (IPO). At the time, the company famously adopted the unofficial motto, \"**Don\u0027t be evil.**\"\n*   **Gmail:** In 2004, they launched Gmail with 1GB of storage (massive at the time), which many users initially thought was an April Fool’s joke.\n\n### 3. The Era of Acquisitions and Mobile (2005–2014)\n*   **Android:** In 2005, Google quietly acquired Android Inc. This allowed Google to enter the mobile market, eventually making Android the most popular mobile operating system in the world.\n*   **YouTube:** In 2006, Google bought YouTube for $1.65 billion, securing its dominance in online video.\n*   **DoubleClick:** In 2007, the acquisition of DoubleClick solidified Google’s stranglehold on the digital advertising market.\n*   **Chrome:** In 2008, Google launched the Chrome web browser, which eventually overtook Internet Explorer and Firefox to become the global standard.\n\n### 4. Restructuring to Alphabet (2015–2022)\n*   **Alphabet Inc.:** In 2015, Google underwent a massive restructuring. It created a parent company called **Alphabet Inc.** to separate its core internet business (Search, YouTube, Android) from its \"moonshot\" projects (like Waymo self-driving cars and Verily life sciences).\n*   **Leadership Change:** Larry Page became CEO of Alphabet, while **Sundar Pichai** was promoted to CEO of Google. In 2019, Page and Brin stepped down from executive roles, leaving Pichai as CEO of both Google and Alphabet.\n*   **Cloud \u0026 Hardware:** During this period, Google aggressively expanded its Cloud business to compete with Amazon and Microsoft and developed its hardware line (Pixel phones, Google Home/Nest).\n\n### 5. The AI Era and Antitrust Battles (2023–Present)\n*   **The AI Pivot:** Following the explosion of generative AI (marked by the release of OpenAI\u0027s ChatGPT in late 2022), Google declared a \"Code Red.\" In 2023 and 2024, the company pivoted entirely toward AI, launching **Bard** (later rebranded as **Gemini**) and integrating AI directly into Google Search via \"AI Overviews.\"\n*   **Antitrust Challenges:**\n    *   In 2024, a U.S. federal judge ruled that Google maintained an illegal monopoly on general search services and text advertising.\n    *   As of early 2025, the company faces significant regulatory pressure, including Department of Justice trials that could potentially force the breakup of parts of the company (such as separating Chrome or Android from the search business).",
+      "role": "model",
+      "finishReason": "STOP",
+      "tokenCount": 935,
+      "parts": [{
+        "text": "Here is a brief history of Google, broken down by key eras:\n\n### 1."
+      }, {
+        "text": " Origins (1996–1998)\n*   **The Idea:** In 1996"
+      }, {
+        "text": ", Stanford Ph.D. students **Larry Page** and **Sergey Brin** began developing a search engine originally"
+      }, {
+        "text": " called **BackRub**. Unlike other engines that ranked results by how many times a keyword appeared, their algorithm (PageRank) analyzed"
+      }, {
+        "text": " relationships between websites to determine relevance.\n*   **The Name:** They renamed it Google, a play on the mathematical term \"goog"
+      }, {
+        "text": "ol\" (the number 1 followed by 100 zeros), symbolizing their mission to organize the immense amount of information"
+      }, {
+        "text": " on the web.\n*   **Incorporation:** After receiving a $100,000 check from"
+      }, {
+        "text": " Sun Microsystems co-founder Andy Bechtolsheim, Google was officially incorporated in September 1998. The first"
+      }, {
+        "text": " office was a garage in Menlo Park, California, rented from **Susan Wojcicki** (who would later become CEO"
+      }, {
+        "text": " of YouTube).\n\n### 2. Rapid Growth and IPO (1999–2004)\n"
+      }, {
+        "text": "*   **Expansion:** Google quickly outgrew the garage and moved to Palo Alto, and eventually to Mountain View ("
+      }, {
+        "text": "the \"Googleplex\").\n*   **Monetization:** In 2000, Google launched **AdWords**,"
+      }, {
+        "text": " a self-service program for creating online ad campaigns. This became the engine of Google\u0027s immense revenue.\n*   "
+      }, {
+        "text": "**Going Public:** On August 19, 2004, Google held its initial public offering (IPO)."
+      }, {
+        "text": " At the time, the company famously adopted the unofficial motto, \"**Don\u0027t be evil.**\"\n*   **Gmail"
+      }, {
+        "text": ":** In 2004, they launched Gmail with 1GB of storage (massive at the time), which"
+      }, {
+        "text": " many users initially thought was an April Fool’s joke.\n\n### 3. The Era of Acquisitions and Mobile (20"
+      }, {
+        "text": "05–2014)\n*   **Android:** In 2005, Google quietly acquired"
+      }, {
+        "text": " Android Inc. This allowed Google to enter the mobile market, eventually making Android the most popular mobile operating system in the world.\n*"
+      }, {
+        "text": "   **YouTube:** In 2006, Google bought YouTube for $1.65 billion, securing its dominance in online"
+      }, {
+        "text": " video.\n*   **DoubleClick:** In 2007, the acquisition of DoubleClick solidified Google’s"
+      }, {
+        "text": " stranglehold on the digital advertising market.\n*   **Chrome:** In 2008, Google launched the Chrome web"
+      }, {
+        "text": " browser, which eventually overtook Internet Explorer and Firefox to become the global standard.\n\n### 4. Restructuring to Alphabet (2"
+      }, {
+        "text": "015–2022)\n*   **Alphabet Inc.:** In 2015,"
+      }, {
+        "text": " Google underwent a massive restructuring. It created a parent company called **Alphabet Inc.** to separate its core internet business (Search,"
+      }, {
+        "text": " YouTube, Android) from its \"moonshot\" projects (like Waymo self-driving cars and Verily life sciences).\n*"
+      }, {
+        "text": "   **Leadership Change:** Larry Page became CEO of Alphabet, while **Sundar Pichai** was promoted to CEO of"
+      }, {
+        "text": " Google. In 2019, Page and Brin stepped down from executive roles, leaving Pichai as CEO of both Google"
+      }, {
+        "text": " and Alphabet.\n*   **Cloud \u0026 Hardware:** During this period, Google aggressively expanded its Cloud business to compete with Amazon and"
+      }, {
+        "text": " Microsoft and developed its hardware line (Pixel phones, Google Home/Nest).\n\n### 5. The AI Era and Antit"
+      }, {
+        "text": "rust Battles (2023–Present)\n*   **The AI Pivot:** Following the explosion of generative AI (marked"
+      }, {
+        "text": " by the release of OpenAI\u0027s ChatGPT in late 2022), Google declared a \"Code Red.\" In"
+      }, {
+        "text": " 2023 and 2024, the company pivoted entirely toward AI, launching **Bard** ("
+      }, {
+        "text": "later rebranded as **Gemini**) and integrating AI directly into Google Search via \"AI Overviews.\"\n*   **Antitrust"
+      }, {
+        "text": " Challenges:**\n    *   In 2024, a U.S. federal judge ruled that Google maintained"
+      }, {
+        "text": " an illegal monopoly on general search services and text advertising.\n    *   As of early 2025,"
+      }, {
+        "text": " the company faces significant regulatory pressure, including Department of Justice trials that could potentially force the breakup of parts of the company ("
+      }, {
+        "text": "such as separating Chrome or Android from the search business)."
+      }, {
+        "text": "",
+        "thoughtSignature": "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"
+      }]
+    }],
+    "pendingInputs": [{
+      "text": "",
+      "role": "user"
+    }]
+  }
+}
