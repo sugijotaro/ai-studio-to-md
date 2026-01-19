@@ -8,6 +8,7 @@ Google AI StudioからエクスポートされたJSONファイルを読み込み
 
 1. Node.jsがインストールされていることを確認してください。
 2. Google AI StudioからエクスポートしたJSONファイルを `json_files` フォルダ（または任意の場所）に配置します。
+   - サンプルとして `json_files/GoogleHistory.json` が用意されています。
 
 ### 2. 実行
 
@@ -17,10 +18,10 @@ Google AI StudioからエクスポートされたJSONファイルを読み込み
 node convert.js <JSONファイルのパス>
 ```
 
-例： `json_files` フォルダに `chat.json` を置いた場合
+例：サンプルファイルの `GoogleHistory.json` を変換する場合
 
 ```bash
-node convert.js json_files/chat.json
+node convert.js json_files/GoogleHistory.json
 ```
 
 ### 3. 出力結果
