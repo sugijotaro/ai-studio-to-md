@@ -15,13 +15,21 @@ Google AI StudioからエクスポートされたJSONファイルを読み込み
 ターミナルで以下のコマンドを実行します。
 
 ```bash
-node convert.js <JSONファイルのパス>
+node convert.js <JSONファイルのパス> [オプション]
 ```
+
+**オプション:**
+
+- `--thoughts` (または `-t`): モデルの思考プロセス (Thinking Process) を含めて出力します。（デフォルトでは除外されます）
 
 例：サンプルファイルの `GoogleHistory.json` を変換する場合
 
 ```bash
+# 通常実行（思考プロセスなし）
 node convert.js json_files/GoogleHistory.json
+
+# 思考プロセスを含めて実行
+node convert.js json_files/GoogleHistory.json --thoughts
 ```
 
 ### 3. 出力結果

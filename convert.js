@@ -1,12 +1,24 @@
 const fs = require("fs");
 const path = require("path");
 
-// コマンドライン引数からファイルパスを取得
-const inputFilePath = process.argv[2];
+// コマンドライン引数の解析
+const args = process.argv.slice(2);
+let inputFilePath = null;
+const options = {
+  includeThoughts: false, // デフォルトは思考プロセスを含めない
+};
+
+args.forEach((arg) => {
+  if (arg === "--thoughts" || arg === "-t") {
+    options.includeThoughts = true;
+  } else if (!arg.startsWith("-")) {
+    inputFilePath = arg;
+  }
+});
 
 if (!inputFilePath) {
   console.error(
-    "エラー: JSONファイルのパスを指定してください。\n使用法: node convert.js <ファイル名.json>",
+    "エラー: JSONファイルのパスを指定してください。\n使用法: node convert.js <ファイル名.json> [--thoughts]",
   );
   process.exit(1);
 }
@@ -69,10 +81,12 @@ chunks.forEach((chunk, index) => {
     chunk.parts.forEach((part) => {
       // 思考プロセス (Thinking) の場合
       if (part.thought || part.isThought) {
-        mdContent += `> 🧠 **Thinking Process**\n> \n`;
-        // 引用記号を行頭につける
-        const thoughtText = part.text.replace(/\n/g, "\n> ");
-        mdContent += `> ${thoughtText}\n\n`;
+        if (options.includeThoughts) {
+          mdContent += `> 🧠 **Thinking Process**\n> \n`;
+          // 引用記号を行頭につける
+          const thoughtText = part.text.replace(/\n/g, "\n> ");
+          mdContent += `> ${thoughtText}\n\n`;
+        }
       } else if (part.text) {
         mdContent += `${part.text}\n\n`;
       }
