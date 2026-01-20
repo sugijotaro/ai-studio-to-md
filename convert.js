@@ -72,12 +72,9 @@ chunks.forEach((chunk, index) => {
   }
 
   // 2. 通常テキストの処理
-  if (chunk.text) {
-    mdContent += `${chunk.text}\n\n`;
-  }
-
-  // 3. Parts（思考プロセスや分割されたテキスト）の処理
-  if (chunk.parts && Array.isArray(chunk.parts)) {
+  // 2. テキストとPartsの処理
+  // Partsがある場合はPartsを優先して処理（思考プロセスの除外やストリーミング再構成のため）
+  if (chunk.parts && Array.isArray(chunk.parts) && chunk.parts.length > 0) {
     chunk.parts.forEach((part) => {
       // 思考プロセス (Thinking) の場合
       if (part.thought || part.isThought) {
@@ -88,9 +85,25 @@ chunks.forEach((chunk, index) => {
           mdContent += `> ${thoughtText}\n\n`;
         }
       } else if (part.text) {
-        mdContent += `${part.text}\n\n`;
+        // 通常テキストはそのまま結合（勝手に改行を入れない）
+        mdContent += part.text;
       }
     });
+    // 最後に改行を入れる
+    mdContent += "\n\n";
+  } 
+  // Partsがない場合のフォールバック
+  else if (chunk.text) {
+     // チャンク全体が思考プロセスの場合
+     if (chunk.isThought) {
+        if (options.includeThoughts) {
+            mdContent += `> 🧠 **Thinking Process**\n> \n`;
+            const thoughtText = chunk.text.replace(/\n/g, "\n> ");
+            mdContent += `> ${thoughtText}\n\n`;
+        }
+     } else {
+        mdContent += `${chunk.text}\n\n`;
+     }
   }
 });
 
